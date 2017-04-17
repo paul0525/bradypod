@@ -7,6 +7,13 @@
 <title>brdaypod_springMVC</title>
 </head>
 <body>
-   Welcome to bradpod 's home!
+
+   <div>
+        <center>
+           <h2>Welcome to bradpod 's home!</h2>
+           <hr style="width:80%">
+            <a href="<%= request.getRequestURL() %>login/loginview.do">登录</a>
+        </center>
+    </div>
 </body>
 </html>
