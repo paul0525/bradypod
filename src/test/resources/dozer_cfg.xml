@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+          
+  <mapping> 
+    <class-a>com.jar.dozer.bean.SourceObj</class-a>
+    <class-b>com.jar.dozer.bean.DifferentProperties</class-b>   
+    <field>
+      <a>name</a>
+      <b>nameDiff</b>
+    </field>
+    <field>
+      <a>age</a>
+      <b>ageDiff</b>
+    </field>
+  </mapping>   
+
+</mappings> 
