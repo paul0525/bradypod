@@ -18,7 +18,7 @@ public class DateFormatConcurrency {
         Thread thread1 = new Thread( new Thread1(dateFormat, today));
         thread1.start();
         
-        Thread thread2 = new Thread( new Thread2(dateFormat, today));
+        Thread thread2 = new Thread( new Thread2(dateFormat, tomorrow));
         thread2.start();
         
     }
@@ -44,7 +44,7 @@ public class DateFormatConcurrency {
                 
                 String strDate = dateFormat.format( date);
                 
-                if( !"2017-07-25".equals(strDate)){
+                if( !"2017-08-17".equals(strDate)){
                     
                     System.err.println("today=" + strDate);
                     System.exit(0);
@@ -74,7 +74,7 @@ public class DateFormatConcurrency {
                 
                 String strDate = dateFormat.format( date );
                 
-                if(!"2017-07-26".equals( strDate ) ){
+                if(!"2017-08-18".equals( strDate ) ){
                     System.err.println("tomorrow=" + strDate);
                     System.exit(0);
                 }
